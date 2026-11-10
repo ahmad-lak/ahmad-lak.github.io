@@ -7,9 +7,9 @@
 
 const SITE = {
   name: "Ahmad Lak",
-  email: "TODO-your-professional-email@example.com", // TODO
-  github: "https://github.com/TODO-handle",          // TODO
-  linkedin: ""                                        // TODO (optional)
+  email: "ahmadlak26@gmail.com", 
+  github: "https://github.com/ahmad-lak",       
+  linkedin: "https://www.linkedin.com/in/ahmad-lak-15b389430/"                                        // TODO (optional)
 };
 
 // The ONE project you are working on right now. Update after a break.
@@ -55,7 +55,7 @@ const PROJECTS = [
       "Agent reviews and approves or edits the caption",
       "Approved post is published to the Facebook page"
     ],
-    tags: ["n8n", "OpenAI", "Facebook"], // TODO: replace with the tools you actually used
+    tags: ["n8n", "OpenAI", "Facebook", "Google Sheets"], // TODO: replace with the tools you actually used
     repo: "",  // TODO: link to the project repo
     video: ""  // TODO: embed link to this project's 60-90 sec video
   },
