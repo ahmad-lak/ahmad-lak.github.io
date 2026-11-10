@@ -22,6 +22,18 @@
 
   // Contact links
   $("#emailBtn").href = "mailto:" + SITE.email;
+  $("#emailText").textContent = SITE.email;
+  $("#copyBtn").addEventListener("click", () => {
+    const done = () => { $("#copyBtn").textContent = "Copied"; setTimeout(() => { $("#copyBtn").textContent = "Copy"; }, 1800); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(SITE.email).then(done, () => {});
+    } else {
+      const t = document.createElement("textarea");
+      t.value = SITE.email; document.body.appendChild(t); t.select();
+      try { document.execCommand("copy"); done(); } catch (e) {}
+      document.body.removeChild(t);
+    }
+  });
   $("#ghBtn").href = SITE.github;
   if (SITE.linkedin) { const li = $("#liBtn"); li.href = SITE.linkedin; li.hidden = false; }
 
