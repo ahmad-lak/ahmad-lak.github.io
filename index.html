@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ahmad Lak | AI Automation</title>
+  <meta name="description" content="AI agents and workflow automation that take repetitive work off your plate, with you approving what matters.">
+  <meta name="theme-color" content="#0b1020">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="index.html#top">AL<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">Menu</button>
+    <nav id="navLinks">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#why">Why automation</a>
+      <a href="index.html#case">Case study</a>
+      <a href="index.html#offer">Offer</a>
+      <a href="index.html#contact" class="btn small">Get in touch</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="hero-text">
+        <p class="eyebrow">AI agents &amp; workflow automation</p>
+        <h1>Automation that gives your team its time back.</h1>
+        <p class="lead">I build AI workflows that handle repetitive work like follow-ups, posting and data entry. You stay in control and approve what matters.</p>
+        <div class="cta">
+          <a class="btn" href="#work">See my work</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="flow" aria-label="Example workflow">
+        <p class="flow-title">example.workflow <span class="dot"></span></p>
+        <ol>
+          <li><b>New request</b><small>trigger</small></li>
+          <li><b>AI drafts</b><small>reply or content</small></li>
+          <li><b>You approve</b><small>human in the loop</small></li>
+          <li><b>Done</b><small>sent, logged, notified</small></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="wrap">
+      <h2><span class="num">01</span> Selected work</h2>
+      <p class="sub">Open a project to see how it works and watch a short video of it running.</p>
+      <div class="tabs" id="tabs" role="tablist"></div>
+      <div class="grid" id="projects"></div>
+
+      <div class="now">
+        <p class="now-label"><span class="dot"></span> Now building</p>
+        <h3 id="nowTitle"></h3>
+        <p id="nowDesc"></p>
+      </div>
+    </section>
+
+    <!-- WHY AUTOMATION -->
+    <section id="why" class="wrap">
+      <h2><span class="num">02</span> Why automation</h2>
+      <p class="sub">What the research says about time and speed.</p>
+      <div class="stats" id="stats"></div>
+    </section>
+
+    <!-- CASE STUDY -->
+    <section id="case" class="wrap">
+      <h2><span class="num">03</span> Case study: listing posts</h2>
+      <div class="ba">
+        <div class="card">
+          <h3>Before</h3>
+          <ul>
+            <li>Copy listing details into a post by hand</li>
+            <li>Write a caption from scratch each time</li>
+            <li>Open Facebook, upload photos, publish</li>
+          </ul>
+        </div>
+        <div class="card accent">
+          <h3>After</h3>
+          <ul>
+            <li>Fill one short form and attach the real photos</li>
+            <li>AI drafts the caption</li>
+            <li>Approve or edit, then it posts</li>
+          </ul>
+        </div>
+      </div>
+      <p class="result">Result: <span class="todo">TODO: add the measured time per post from your own test run</span></p>
+    </section>
+
+    <!-- OFFER -->
+    <section id="offer" class="wrap">
+      <h2><span class="num">04</span> Starter offer</h2>
+      <div class="card offer">
+        <h3>Lead Reply &amp; Follow-Up Setup</h3>
+        <ul>
+          <li>Instant reply to new inquiries</li>
+          <li>Follow-up that mentions what they asked about</li>
+          <li>Leads logged in a sheet or your CRM</li>
+          <li>You get notified when a lead is ready to talk</li>
+        </ul>
+        <p class="meta"><b>Timeline:</b> <span class="todo">TODO</span> &nbsp; <b>Price:</b> <span class="todo">TODO</span></p>
+        <a class="btn" href="#contact">Ask about this</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="wrap contact">
+      <h2>Have a repetitive process eating your time?</h2>
+      <p class="sub">Send two lines about how you handle it today and I'll reply with how I'd automate it.</p>
+      <div class="cta">
+        <a class="btn" id="emailBtn" href="#">Email me</a>
+        <a class="btn ghost" id="ghBtn" href="#" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" id="liBtn" href="#" target="_blank" rel="noopener" hidden>LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <span>&copy; <span id="year"></span> Ahmad Lak</span>
+    <span>AI agents &amp; workflow automation</span>
+  </footer>
+
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
